@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4>Product Form</h4>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <input type="text" class="form-control" name="id" placeholder = "Id" value={{ product.id}}>
+                <input type="text" class="form-control" name="id" placeholder = "Description" value={{ product.description}}>
+                <input type="number" class="form-control" name="id" placeholder = "Price" value={{ product.price}}>
+                <input type="text" class="form-control" name="id" placeholder = "Image File" value={{ product.imageUrl }}>
+                <input type="submit" class="btn btn-primary" value="Save">
+            </form>
+
+        </div>
+        <div class="card-footer text-white">
+            <button class="btn btn-danger"> Cancel</button>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
