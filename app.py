@@ -64,3 +64,7 @@ def createOrEditProduct(id):
             return render_template("productForm.html",product =filteredProducts[id -1])
         except:
             return abort(404)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
